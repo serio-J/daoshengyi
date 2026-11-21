@@ -1,0 +1,4 @@
+interface:
+  display_name: "道生一 Daoshengyi"
+  short_description: "Compress methods and knowledge into skills or character prompts"
+  default_prompt: "Use $daoshengyi to compress these materials into an expert skill or character prompt, preserving thinking and supporting knowledge."
