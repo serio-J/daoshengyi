@@ -17,5 +17,15 @@ SCOPE → INGEST → MODEL ↔ COMPRESS → CIR_VALIDATE → REVIEW → COMPILE 
 证据缺失回到 INGEST；模型忠实执行仍错误回到 MODEL；
 压缩丢区分回到 COMPRESS；输出丢知识或边界回到 COMPILE。
 最小因果修复后回归相关案例，不通过追加大量补丁遮蔽问题。
-完整档案字段见 contracts.md；不以旧样例的合成 PASS 作为验证依据。
+完整档案字段见 `references/contracts.md`；不以旧样例的合成 PASS 作为验证依据。
+
+## 可选审计模板（`assets/templates/`）
+仅完整模式或需归档审计时按需取用，不要求轻量任务填写：
+- `anchor.md`：目标、范围与保真锚点
+- `evidence-card.md`：单条证据与出处记录
+- `knowledge-card.md`：W 视图（表示与支撑知识）
+- `behavior-card.md`：GU 视图（条件、机制、反应、边界）
+- `thinking-formula.md`：Γ 视图（状态转换与判断流程）
+- `validation-report.md`：分级验证与对照报告
+- `forge-record.md`：开炉与版本谱系记录
 

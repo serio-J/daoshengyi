@@ -1,36 +1,36 @@
-# Daoshengyi Theory v1
+# 道生一理论框架（Daoshengyi Theory v1）
 
-Daoshengyi is an evidence-constrained cognitive compiler: it estimates a minimal sufficient cognitive model from heterogeneous evidence, compiles it into an executable Agent, validates it by forward generation, and repairs it causally after failure.
+道生一是一个**证据约束的认知编译器**：它从杂多证据中估计最小充分认知模型，编译为可执行产物，通过前向生成验证，并在失败后做因果修复。
 
-## Core ontology
-`Agent = <W, Γ>`.
-W is the target-relevant representational model. Γ is the generative dynamics over represented states. Runtime: `Observation → W → State_t → Γ → (Action_t, State_{t+1})`.
+## 核心本体
+`Agent = <W, Γ>`
+W 是任务相关的表示模型；Γ 是建立在表示状态之上的生成动力学。运行时：`Observation → W → State_t → Γ → (Action_t, State_{t+1})`。
 
-## Six axioms
-1. Generative: `Agent != InformationSet`; cognition must map state to behavior.
-2. Evidence: `Material != Mind`; `Statement != Truth`.
-3. Anchoring: `CognitiveModel = f(Evidence, Anchor)`.
-4. Minimal generative sufficiency: minimize model complexity subject to adequate generative and boundary fidelity.
-5. Non-uniqueness: finite evidence does not imply a unique true cognitive model.
-6. Falsifiability: a useful model must survive new, conflicting, boundary, and counterfactual tests; it must Explain Past + Generate Future.
+## 六条公理
+1. **生成性**：`Agent ≠ 信息集合`；认知必须把状态映射到行为。
+2. **证据性**：`材料 ≠ 心智`；`陈述 ≠ 事实`。
+3. **锚定性**：`CognitiveModel = f(Evidence, Anchor)`；脱离目标不存在绝对最优压缩。
+4. **最小生成充分性**：在满足足够生成保真度与边界保真度的前提下，最小化模型复杂度。
+5. **非唯一性**：有限证据不能唯一确定一个真实心智。
+6. **可证伪性**：有用的模型必须经受住新情境、冲突、边界与反事实测试——既要能解释过去，更要能生成未来。
 
-## Anchor
-`Anchor = <Target, Scope, Runtime, Fidelity>`. There is no target-independent optimal compression.
+## 锚点（Anchor）
+`Anchor = <Target, Scope, Runtime, Fidelity>`。所有压缩决策都相对锚点定义。
 
-## Personality
-A projection of stable biases over cognitive transitions: attention, interpretation, objective priority, decision thresholds, arbitration, and mode switching. Personality is not primarily an adjective list.
+## 人格（Personality）
+人格是认知状态跃迁上稳定偏置的投影：体现在注意力、解释、目标优先级、决策阈值、冲突仲裁与模式切换上，而不是一张形容词清单。
 
-## Learning
-Learning modifies future state-transition structure: `(W, Γ)_t → (W, Γ)_{t+1}`. It may update representation, mechanisms, objectives, or policies. Learning is not required for minimal agenthood.
+## 学习（Learning）
+学习会修改未来的状态跃迁结构：`(W, Γ)_t → (W, Γ)_{t+1}`，可能更新表示、机制、目标或策略。学习不是最小可用 Agent 的必需条件。
 
-## Identity
-Identity is stable generative invariants plus lineage across change. Reforge preserves selected core; Fork changes core.
+## 身份与演进（Identity）
+身份由稳定的生成不变量以及变更谱系共同定义。**再铸（Reforge）**保留选定核心；**分叉（Fork）**改变核心。
 
-## Fidelity
-Useful dimensions include Decision, Reasoning, Priority, Boundary, Adaptation, Expression, and Source Fidelity. Highest-value fidelity is generative: novel contexts should follow the latent mechanism rather than memorized examples.
+## 保真度（Fidelity）
+关键维度包括：决策、推理、优先级、边界、适应、表达与来源保真度。最高价值的是**生成保真度**：在未见过的新情境下，依然遵循潜在机制而非背诵原例。
 
-## Epistemic principle
-Evidence, interpretation, hypothesis, and model are different layers. Preserve uncertainty and competing hypotheses when evidence underdetermines cognition.
+## 认识论原则
+证据、解释、假设与模型分属不同层级。当证据不足以唯一决定认知时，必须保留不确定性与竞争假设。
 
-## Repair principle
-Failure is an observation. Diagnose the causal layer, make the smallest repair, and validate again.
+## 修复原则
+失败是一次观测。先定位因果出错的层级，做最小修复，再重新验证。

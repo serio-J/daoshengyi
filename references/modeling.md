@@ -1,27 +1,27 @@
-# Cognitive Modeling
+# 认知建模（Cognitive Modeling）
 
-Modeling is inverse system identification: `Evidence → Hypothesis(W, Γ)`.
+建模本质上是逆向系统辨识：`Evidence → Hypothesis(W, Γ)`。
 
-## Representation discovery
-Search for variables that change behavior. Ask: what did the target have to distinguish for this behavior to make sense? Do not inherit chapter structure or high-frequency vocabulary as ontology.
+## 表示发现（W）
+寻找会改变行为的变量。追问：**目标必须区分什么，这种行为才说得通？** 不要直接照搬原书章节结构或高频词当作本体结构。
 
-## Mechanism discovery
-For important `State → Judgment → Action` transitions, ask what mechanism would generate the transition. Infer conditions, priorities, conflicts, inhibition, sequencing, mode transitions, and termination.
+## 机制发现（Γ）
+对关键的 `状态 → 判断 → 行动` 跃迁，追问是什么机制生成了它。推断其中的触发条件、优先级、冲突、抑制、先后顺序、模式切换与终止条件。
 
-## Candidate competition
-Compare hypotheses by explanatory coverage, generative ability, boundary accuracy, structural simplicity, cross-context stability, and evidence support. Preserve alternatives when evidence does not discriminate them.
+## 候选竞争
+从解释覆盖面、生成能力、边界精度、结构简洁度、跨语境稳定性与证据支持六个维度比较候选假设。当证据无法区分时，保留竞争假设而非强行选一。
 
-## Counterfactual tests
-Ask whether observed behavior would still follow without the proposed mechanism and whether changing its triggering state changes the prediction. A rule that explains every state equally is weak.
+## 反事实检验
+追问：去掉这个提议的机制后，观察到的行为是否依然会发生？改变它的触发状态后，预测是否真的改变？一条能同等解释所有状态的规则是弱规则。
 
-## GU discovery
-Multiple surface behaviors may share a latent mechanism, but merging is only a hypothesis. Validate behavioral equivalence before accepting it.
+## 生成单元（GU）发现
+多种表层行为可能共享同一个潜在机制，但「合并」本身只是假设，必须验证行为等价后再采纳。
 
-## Personality
-Infer stable biases over attention, interpretation, objective priority, loss weighting, decision thresholds, conflict arbitration, and mode switching. Style is Expression unless it changes cognition.
+## 人格建模
+从行为中推断跨越认知跃迁的稳定偏置：注意力分配、解释倾向、目标优先级、损失权重、决策阈值、冲突仲裁与模式切换。语言风格属于 Expression（表达层），除非它实际改变了认知判断。
 
-## Expertise
-Do not confuse what an expert knows with how the expert thinks. Prefer cases, diagnoses, decisions, exceptions, failures, comparisons, tradeoffs, sequences, and changes of mind. Ask what they inspect first, what changes conclusions, what changes their mind, what wins under conflict, when a rule fails, and what novices represent incorrectly.
+## 专长建模
+不要混淆「专家知道什么」和「专家怎么思考」。优先采集案例、诊断、决策、例外、失败、对比、权衡、步骤顺序与改变主意的节点。追问：他们最先检查什么？什么会改变结论？什么会让他们改主意？冲突时谁赢？规则何时失效？新手通常把什么表征错了？
 
-## Forward check
-Every inverse model must survive `(W, Γ) + NovelState → PredictedBehavior`. If it only explains source examples, it is descriptive compression rather than cognitive reconstruction.
+## 前向检验
+每个逆向模型都必须通过 `(W, Γ) + 新状态 → 预测行为` 的前向检验。如果只能解释原材里的例子，那只是描述性压缩，不是认知重构。
